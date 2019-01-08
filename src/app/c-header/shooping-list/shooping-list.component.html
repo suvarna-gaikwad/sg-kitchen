@@ -2,9 +2,14 @@
   <div class="col-md-5">
       <app-shopping-edit></app-shopping-edit>
       <hr>
-      <p>
-        shopping-list works!
-      </p>
+      <p>Shopping List</p>
+        <ul>
+          <li *ngFor="let ingredient of ingredients">
+            <a href="#">
+              {{ ingredient.name }} ( {{ ingredient.amount }} )
+            </a>
+          </li>
+        </ul>      
   </div>
 </div>
 
